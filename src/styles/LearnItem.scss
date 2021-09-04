@@ -9,6 +9,7 @@
   transition: 0.5s;
   max-width: calc(100% - 30px);
   width: 100%;
+  position: relative;
 }
 
 .collapsible__btn {
@@ -81,7 +82,6 @@
   position: relative;
   flex: 0 0 24px;
   height: 24px;
-  opacity: 0.5;
   transition: 0.5s;
   pointer-events: none;
   margin-left: 25px;
@@ -93,15 +93,11 @@
   }
 }
 
-.collapsible__close:hover {
-  opacity: 1
-}
-
 .collapsible__close:before,
 .collapsible__close:after {
   position: absolute;
   left: 11px;
-  content: ' ';
+  content: "";
   height: 24px;
   width: 2px;
   background-color: $text-color;
@@ -121,23 +117,34 @@
   transform: rotate(0);
 }
 
+.collapsible:hover .collapsible__close:before,
+.collapsible:hover .collapsible__close:after{
+  background-color: $accent;
+}
+
 .active .collapsible__close:before {
   transform: rotate(45deg);
+  background-color: $accent;
 }
 
 .active .collapsible__close:after {
   transform: rotate(-45deg);
+  background-color: $accent;
 }
 
-.active.collapsible {
+.collapsible:hover, .active.collapsible {
   background-color: #E2E9FF;
   border-top: 1px solid $accent;
   border-bottom: 1px solid $accent;
   padding-left: 15px;
   padding-right: 15px;
   max-width: 100%;
+  z-index: 1;
 }
 
+.collapsible:hover .collapsible__btn{
+  color: $accent;
+}
 
 .active .collapsible__btn {
   color: $accent;
@@ -149,6 +156,6 @@
   margin-bottom: 30px;
 }
 
-.active .collapsible__icon {
+.collapsible:hover .collapsible__icon, .active .collapsible__icon {
   background-color: $btn-color;
 }
