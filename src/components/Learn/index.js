@@ -1,19 +1,18 @@
 import classes from "../../styles/Learn.module.scss";
-import Container from "../commons/Container";
 import Title from "../commons/Title";
 import Section from "../commons/Section";
 import { data } from "../../data/learn";
 import Button from "../commons/Button";
+import LearnList from "../LearnList";
 
-export default function Learn() { 
+export default function Learn() {
   return (
     <Section className={classes.learn}>
-      <Container>
-        <section className={classes.learn__body}>
-          <Title text={data.title}/>
+      <section className={classes.learn__body}>
+          <Title text={data.title} />
+          <LearnList list={data.list} />
           <Button text={data.btnText} />
-        </section>
-      </Container>
+      </section>
     </Section>
   );
 }
