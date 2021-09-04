@@ -1,0 +1,16 @@
+@import "vars";
+
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: $accent;
+    margin-bottom: $title-margin;
+
+    @media (max-width: 768px) {
+        margin-bottom: $title-margin/2;
+        font-size: 30px;
+        line-height: 37px;
+    }
+}

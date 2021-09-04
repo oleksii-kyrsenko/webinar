@@ -1,0 +1,42 @@
+@import "vars";
+
+.header {
+    width: 100%;
+    padding: 43px 0 7px;
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__btn {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        padding: 5px 25px;
+        background-color: $accent;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
+        @media (max-width: 640px) {
+            font-size: 14px;
+            line-height: 17px;
+            padding: 5px 15px;
+        }
+    }
+
+    &__logo{
+        display: flex;
+        flex: 0 0 255px;
+
+        @media (max-width: 640px) {
+           flex: 0 0 186px;
+        }
+
+        @media (max-width: 354px) {
+            flex: 0 0 155px;
+        }
+    }
+}

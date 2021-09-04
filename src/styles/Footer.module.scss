@@ -1,0 +1,17 @@
+@import "vars";
+
+.footer {
+    // position: absolute;
+    // width: 100%;
+    // top: 100%;
+    // left: 0;
+    padding: 10px 0;
+    text-align: center;
+
+    &__text {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: #A8ACB9;
+    }
+}

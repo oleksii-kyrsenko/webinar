@@ -1,0 +1,17 @@
+@import "vars";
+
+.button {
+    width: 255px;
+    padding: 12px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #EC615B;
+    cursor: pointer;
+
+    @media (max-width: 768px) {
+        width: 240px;
+    }
+}

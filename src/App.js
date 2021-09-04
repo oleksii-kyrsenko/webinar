@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import  {  useEffect } from "react";
+import Banner from "./components/Banner";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Learn from "./components/Learn";
+import Need from "./components/Need";
+import Widget from "./components/Widget";
+import smoothscroll from "smoothscroll-polyfill";
+import classes from "./styles/App.module.scss";
+
 
 function App() {
+
+  useEffect(() => {
+    smoothscroll.polyfill();
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section className={classes.wrapper}>
+      <Header />
+      <Hero/>
+      <Need/>
+      <Learn/>
+      <Banner/>
+      <Widget/>
+      <Footer/>
+    </section>
   );
 }
 

@@ -1,0 +1,29 @@
+@import "vars";
+
+.widget {    
+    &__body {
+        padding-top: 60px;
+        min-height: 733px;
+        display: flex;
+        justify-content: center;
+        background-image: url(../assets/images/widget/widget-bgr.png);
+        background-repeat: no-repeat;
+        background-size: 1140px;
+        background-position:  center;
+        position: relative;
+
+        &::after{
+            content: "Loading...";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%);
+            color: $accent;
+        }
+
+        @media (max-width: 1024px) {
+            padding-top: $section-padding;
+
+         }
+    }
+}

@@ -1,0 +1,14 @@
+.wrapper{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #FFF;
+    background-image: url(../assets/images/header/bgr.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+
+
+    @media (max-width: 1024px) {
+        background-image: url(../assets/images/header/bgr-mobile.png);
+    }
+}

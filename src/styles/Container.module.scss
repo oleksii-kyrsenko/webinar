@@ -1,0 +1,12 @@
+@import "vars";
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 $container-padding;
+    margin: 0 auto;
+
+    @media (max-width: 768px) {
+        padding: 0 $container-padding/2;
+    }
+}

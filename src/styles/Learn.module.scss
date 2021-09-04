@@ -1,0 +1,9 @@
+@import "vars";
+
+.learn {
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

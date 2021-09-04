@@ -1,0 +1,15 @@
+@import "vars";
+
+.banner {
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        height: 42.1vh;
+        background-image: url(../assets/images/banner/banner.png);
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-size: cover;
+    }
+}
