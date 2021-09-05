@@ -9,6 +9,7 @@ import Widget from "./components/Widget";
 import smoothscroll from "smoothscroll-polyfill";
 import classes from "./styles/App.module.scss";
 import Speakers from "./components/Speakers";
+import About from "./components/About";
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
       <Learn/>
       <Speakers/>
       <Banner/>
+      <About/>
       <Widget/>
       <Footer/>
     </section>

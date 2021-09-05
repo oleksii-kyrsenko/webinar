@@ -1,0 +1,60 @@
+@import "vars";
+
+.about {
+    text-align: center;
+
+    &__content {
+        margin-bottom: $section-margin;
+
+        @media (max-width: 768px) {
+            margin-bottom: $section-margin/2;
+        }
+    }
+
+    &__logo {
+        margin-bottom: $title-margin;
+
+        @media (max-width: 768px) {
+            margin-bottom: $title-margin/2;
+        }
+    }
+
+    &__text {
+        font-family: 'Roboto', sans-serif;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+
+        @media (max-width: 768px) {
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        p:not(:last-child) {
+            margin-bottom: $text-margin;
+        }
+    }
+
+    &__list{
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(6, auto);
+        grid-auto-flow: row;
+        grid-auto-rows: 1fr;
+        gap:$text-margin;
+
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        
+        @media (max-width: 400px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    &__item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
