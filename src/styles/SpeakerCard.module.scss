@@ -1,0 +1,125 @@
+@import "vars";
+
+.speaker {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 83px;
+        @media (max-width: 768px) {
+            margin-bottom: $title-margin;
+        }
+    }
+
+    &:nth-child(odd){
+        .speaker__img {
+            padding-right: $text-margin;
+
+            @media (max-width: 768px) {
+                padding: 0;
+            }
+        }
+    }
+
+    &:nth-child(even) {
+        flex-direction: row-reverse;
+
+        .speaker__img {
+            padding-left: $text-margin;
+            @media (max-width: 768px) {
+                padding: 0;
+            }
+        }
+
+        .speaker__img,
+        .speaker__content {
+            align-items: flex-end;
+
+            @media (max-width: 768px) {
+                width: 100%;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__img {
+        @media (max-width: 768px) {
+            margin-bottom: $text-margin;
+        }
+    }
+
+    &__img,
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 50%;
+
+        @media (max-width: 768px) {
+            width: 100%;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    &__content-body {
+        max-width: 475px;
+    }
+
+    &__position {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: $accent;
+        margin-bottom: 5px;
+
+        @media (max-width: 768px) {
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
+
+    &__name {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        color: $accent;
+        margin-bottom: $text-margin;
+
+        @media (max-width: 768px) {
+            font-size: 20px;
+            line-height: 23px;
+            margin-bottom: $text-margin/2;
+        }
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 21px;
+
+        @media (max-width: 768px) {
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: normal;
+        }
+
+        p:not(:last-child) {
+            margin-bottom: $text-margin;
+
+            @media (max-width: 768px) {
+                margin-bottom: $text-margin/2;
+            }
+        }
+    }
+}

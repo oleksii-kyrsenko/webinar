@@ -8,6 +8,7 @@ import Need from "./components/Need";
 import Widget from "./components/Widget";
 import smoothscroll from "smoothscroll-polyfill";
 import classes from "./styles/App.module.scss";
+import Speakers from "./components/Speakers";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <Hero/>
       <Need/>
       <Learn/>
+      <Speakers/>
       <Banner/>
       <Widget/>
       <Footer/>
