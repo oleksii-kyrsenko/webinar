@@ -111,7 +111,7 @@
         @media (max-width: 768px) {
             font-size: 14px;
             line-height: 16px;
-            font-weight: normal;
+            font-weight: 400;
         }
 
         p:not(:last-child) {
@@ -120,6 +120,30 @@
             @media (max-width: 768px) {
                 margin-bottom: $text-margin/2;
             }
+        }
+    }
+
+    &__list{
+        padding-left: 27px;
+        list-style-type: disc;
+        list-style-position: outside;
+        margin-top: $text-margin;
+
+            @media (max-width: 768px) {
+                padding-left: 0px;
+                list-style-position: inside;
+                margin-top: $text-margin/2;
+            }
+    }
+
+    &__item{
+        font-size: 18px;
+        line-height: 21px;
+
+        @media (max-width: 768px) {
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: 400;
         }
     }
 }

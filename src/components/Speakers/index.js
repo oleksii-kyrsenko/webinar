@@ -14,7 +14,7 @@ export default function Speakers() {
             <Title text={data.title}/>
             <ul className={classes.speakers}>
                 {data.list.map(speaker => <SpeakerCard
-                position={speaker.position} name={speaker.name} text={speaker.text} image={speaker.image} key={uuid()}/>)}
+                position={speaker.position} name={speaker.name} text={speaker.text} image={speaker.image} list={speaker?.list} key={uuid()}/>)}
             </ul>
           </section>
         </Container>
