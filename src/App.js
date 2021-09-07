@@ -1,17 +1,7 @@
 import React, { Suspense, useEffect } from "react";
-
 import gsap from "gsap";
 import { ScrollToPlugin } from "gsap/dist/ScrollToPlugin";
-// import Banner from "./components/Banner";
-// import Footer from "./components/Footer";
-// import Header from "./components/Header";
-// import Hero from "./components/Hero";
-// import Learn from "./components/Learn";
-// import Need from "./components/Need";
-// import Widget from "./components/Widget";
 import classes from "./styles/App.module.scss";
-// import Speakers from "./components/Speakers";
-// import About from "./components/About";
 const Banner = React.lazy(() => import('./components/Banner'));
 const Footer = React.lazy(() => import('./components/Footer'));
 const Header = React.lazy(() => import('./components/Header'));
