@@ -2,6 +2,7 @@ import React, { Suspense, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollToPlugin } from "gsap/dist/ScrollToPlugin";
 import classes from "./styles/App.module.scss";
+import {Loader} from "./components/Loader"
 const Banner = React.lazy(() => import('./components/Banner'));
 const Footer = React.lazy(() => import('./components/Footer'));
 const Header = React.lazy(() => import('./components/Header'));
@@ -25,7 +26,7 @@ function App() {
   return (
     
     <section className={classes.wrapper}>
-      <Suspense fallback={null}>
+      <Suspense fallback={<Loader/>}>
       <Header />
       <Hero/>
       <Need/>
