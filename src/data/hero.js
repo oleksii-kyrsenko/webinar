@@ -11,7 +11,7 @@ export const data = {
   ],
   date:{
       day:{
-          top:"Wednesday",
+          top:"Wed",
           bottom:"DAY",
       },
       month:{
