@@ -36,17 +36,16 @@
 
 @font-face {
 	font-family: 'Proxima Nova';
-	src: url('../fonts/proxima_nova_thin_italic.eot'); 
-	src: url('../fonts/proxima_nova_thin_italic.eot?#iefix') format('embedded-opentype'), 
-		url('../fonts/proxima_nova_thin_italic.woff2') format('woff2'),
-		url('../fonts/proxima_nova_thin_italic.woff') format('woff'), 
-		url('../fonts/proxima_nova_thin_italic.ttf') format('truetype'), 
-		url('../fonts/proxima_nova_thin_italic.svg#proxima_nova_thin_italic') format('svg'); 
-
-		font-weight: 100;
+	src: url('./fonts/ProximaNova/ProximaNova-LightIt.eot');
+	src: local('Proxima Nova Light Italic'), local('ProximaNova-LightIt'),
+		url('./fonts/ProximaNova/ProximaNova-LightIt.eot?#iefix') format('embedded-opentype'),
+		url('./fonts/ProximaNova/ProximaNova-LightIt.woff') format('woff'),
+		url('./fonts/ProximaNova/ProximaNova-LightIt.ttf') format('truetype');
+	font-weight: 300;
 	font-style: italic;
 	font-display: swap;
 }
+
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
