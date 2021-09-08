@@ -1,11 +1,9 @@
-import "../../styles/LearnItem.scss";
-import Paragraph from "../commons/Paragraph";
+import classes from "../../styles/LearnItem.module.scss";
 
-export default function LearnItem({ title, text }) {
+export default function LearnItem({ title }) {
   return (
-    <li className="collapsible">
-      <button className="collapsible__btn">
-        <div className="collapsible__icon">
+    <li className={classes.item}>
+        <div className={classes.item__icon}>
           <svg
             width="12"
             height="8"
@@ -19,12 +17,7 @@ export default function LearnItem({ title, text }) {
             />
           </svg>
         </div>
-        <span>{title}</span>
-        <div className="collapsible__close"></div>
-      </button>
-      <div className="collapsible__content">
-        <Paragraph data={text} />
-      </div>
+        <p className={classes.item__text}>{title}</p>
     </li>
   );
 }

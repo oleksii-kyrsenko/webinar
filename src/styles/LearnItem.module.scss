@@ -1,0 +1,39 @@
+@import "vars";
+
+.item {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: $text-margin;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__icon {
+    flex: 0 0 24px;
+    height: 24px;
+    background-color: $btn-color;
+    margin-right: $text-margin*2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3px;
+
+    @media (max-width: 768px) {
+      margin-right: $text-margin;
+    }
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+
+    @media (max-width: 768px) {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+}
