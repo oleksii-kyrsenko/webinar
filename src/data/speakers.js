@@ -18,14 +18,14 @@ export const data = {
       position: "Guest speaker",
       name: "Anton Prokuda",
       text: [
-        "Sr iOS Software Engineer at Tinder  with a focus on Testing and CI/CD infrastructure with substantial experience in both established IT companies as well as consulting.",
+        "Sr. iOS Software Engineer at Tinder  with a focus on Testing and CI/CD infrastructure with substantial experience in both established IT companies as well as consulting.",
 
         "The main driver behind  enterprise-level in-house solutions that scale continuous development as well as testing processes:",
       ],
       image: sp2,
       list:[
         "Scalable test architecture for native IOS infrastructure",
-        "The main contributor for open-source parallel test execution solution -- Sift",
+        "The main contributor for open-source parallel test execution solution -- SIFT",
         "iOS CI/CD solution from scratch",
       ]
     },

@@ -43,6 +43,7 @@ export default function Hero() {
               </p>
             </div>
             <Button text={data.btnText} />
+            <p className={classes.hero__description}>{data.description}</p>
           </div>
           <div className={classes.hero__image}>
             <img

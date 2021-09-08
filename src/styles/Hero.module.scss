@@ -12,12 +12,6 @@
         }
     }
 
-    &__content {
-        @media (max-width: 1024px) {
-            margin-bottom: $text-margin;
-        }
-    }
-
     &__title {
         display: grid;
         grid-template-areas:
@@ -162,6 +156,18 @@
             display: flex;
         }
     }
+
+   &__description{
+    margin-top: $text-margin;
+    font-weight: 100;
+    font-style: italic;
+    color: $accent;
+
+    @media (max-width: 768px) {
+        font-size: 14px;
+        line-height: 17px;
+    }
+   }
 
     &__image {
         display: flex;

@@ -4,10 +4,10 @@
     text-align: center;
 
     &__content {
-        margin-bottom: $section-margin;
+        margin-bottom: $title-margin;
 
         @media (max-width: 768px) {
-            margin-bottom: $section-margin/2;
+            margin-bottom: $title-margin/2;
         }
     }
 

@@ -11,7 +11,7 @@ export const data = {
   ],
   date:{
       day:{
-          top:"Friday",
+          top:"Wednesday",
           bottom:"DAY",
       },
       month:{
@@ -19,11 +19,12 @@ export const data = {
           bottom:"22",
       },
       time:{
-          top:"5:00 (PST)",
-          bottom:"PM",
+          top:"10:00 (PST)",
+          bottom:"AM",
       }
   },
   image,
   titleIcon,
-  btnText:"Take part"
+  btnText:"Register now!",
+  description:"If you won't be able to visit the webinar - register anyway - you'll receive a webinar recording thereafter"
 };

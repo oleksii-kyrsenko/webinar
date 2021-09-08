@@ -34,19 +34,36 @@
 	font-display: swap;
 }
 
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('../fonts/proxima_nova_thin_italic.eot'); 
+	src: url('../fonts/proxima_nova_thin_italic.eot?#iefix') format('embedded-opentype'), 
+		url('../fonts/proxima_nova_thin_italic.woff2') format('woff2'),
+		url('../fonts/proxima_nova_thin_italic.woff') format('woff'), 
+		url('../fonts/proxima_nova_thin_italic.ttf') format('truetype'), 
+		url('../fonts/proxima_nova_thin_italic.svg#proxima_nova_thin_italic') format('svg'); 
+
+		font-weight: 100;
+	font-style: italic;
+	font-display: swap;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-  }
+}
 
-  html, body{
-	  height: 100%;
-  }
-  
-  body {
+html,
+body {
+	height: 100%;
+}
+
+body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	min-width: 320px;
@@ -57,9 +74,4 @@
 	color: #141416;
 	font-size: 16px;
 	line-height: 26px;
-  }
-
-
-
-
-
+}

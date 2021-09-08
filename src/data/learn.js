@@ -26,5 +26,5 @@ export const data = {
             text:["Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, quasi minus sed asperiores voluptatibus quaerat reiciendis ex. Quisquam impedit eveniet dolore debitis iste, reprehenderit illum ratione minima repudiandae ea sapiente animi, ipsum corrupti ut nemo maiores nostrum necessitatibus! Optio id dicta, saepe quas doloremque corporis totam accusamus eius aut asperiores!"]
         },
     ],
-    btnText:"Get involved",
+    btnText:"Register online",
 }
