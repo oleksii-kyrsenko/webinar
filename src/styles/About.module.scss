@@ -13,9 +13,11 @@
 
     &__logo {
         margin-bottom: $title-margin;
+        margin-top: -$title-margin;
 
         @media (max-width: 768px) {
             margin-bottom: $title-margin/2;
+            margin-top: -$title-margin/2;
         }
     }
 

@@ -7,7 +7,7 @@ import apple from "../assets/images/about/apple.png";
 import emerge from "../assets/images/about/emerge.png";
 
 export const data = {
-  title_1: "Brought to you by Engenious",
+  title_1: "Brought to you by",
   title_2: "Trusted by:",
   logo,
   text: [
