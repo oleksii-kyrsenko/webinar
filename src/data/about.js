@@ -5,6 +5,8 @@ import fc from "../assets/images/about/fc.png";
 import af from "../assets/images/about/af.png";
 import apple from "../assets/images/about/apple.png";
 import emerge from "../assets/images/about/emerge.png";
+import cartinuity from "../assets/images/about/cartinuity.png";
+import pango from "../assets/images/about/pango.png";
 
 export const data = {
   title_1: "Brought to you by",
@@ -15,5 +17,14 @@ export const data = {
 
     "Among our clients are the world's top and famous companies like Apple and Grammarly. We put love and soul in our work with hope that the experience, knowledge, and excellence that our experts deliver will outlive us.",
   ],
-  clients: [{logo:a2b, name:"a2b direct"}, {logo:grm, name:"grammarly"}, {logo:fc, name:"fuel cycle"}, {logo:af, name:"anchor free"}, {logo:apple, name:"apple"}, {logo:emerge, name:"emerge"}],
+  clients: [
+    { logo: apple, name: "apple" },
+    { logo: grm, name: "grammarly" },
+    { logo: af, name: "anchor free" },
+    { logo: fc, name: "fuel cycle" },
+    { logo: a2b, name: "a2b direct" },
+    { logo: emerge, name: "emerge" },
+    { logo: pango, name: "pango" },
+    { logo: cartinuity, name: "cartinuity" },
+  ],
 };
