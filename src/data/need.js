@@ -10,15 +10,15 @@ export const data = {
     cards:[
         {
             image:img1,
-            title:"iOS Developer",
+            title:"Developer",
         },
         {
             image:img2,
-            title:"iOS Tester",
+            title:"Tester",
         },
         {
             image:img3,
-            title:"QA Tester",
+            title:"Automation Engineer",
         },
         {
             image:img4,
@@ -26,7 +26,7 @@ export const data = {
         },
         {
             image:img5,
-            title:"Release Manager",
+            title:"Project Manager",
         },
     ]
 }
