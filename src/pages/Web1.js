@@ -1,4 +1,4 @@
-import React, {  useEffect } from "react";
+import React, { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollToPlugin } from "gsap/dist/ScrollToPlugin";
 import classes from "../styles/App.module.scss";
@@ -20,15 +20,22 @@ export default function Web1() {
   }, []);
   return (
     <section className={classes.wrapper}>
-        <Header />
-        <Hero />
-        <Need />
-        <Learn />
-        <Speakers />
-        <Banner />
-        <About />
-        <Widget />
-        <Footer />
+      <Header />
+      <Hero />
+      <Need />
+      <Learn />
+      <Speakers />
+      <Banner />
+      <About />
+      <Widget>
+        <div
+          id="35H09lyN"
+          className="ss-landing"
+          data-target="35H09lyN"
+          data-domain="engenious"
+        ></div>
+      </Widget>
+      <Footer />
     </section>
   );
 }
