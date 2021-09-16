@@ -11,8 +11,8 @@ const Router = () => {
   return (
     <Suspense fallback={renderLoader()}>
       <Switch>
-        <Route exact path="/web1" component={Web1} />
-        <Route exact path="/web2" component={Web2} />
+        <Route exact path="/web" component={Web1} />
+        <Route exact path="/sift_web" component={Web2} />
         <Route path="*" component={Page404} />
       </Switch>
     </Suspense>
