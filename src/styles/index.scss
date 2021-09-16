@@ -11,4 +11,37 @@
   z-index: 10;
 }
 
+.page-404 {
+  display: flex;
+  min-height: 100vh;
+  padding-top: 98px;
+  padding-bottom: 40px;
+}
+
+.page-404 .button-parent {
+  margin: 0;
+}
+
+.page-404__image {
+  margin-bottom: 32px;
+}
+
+.page-404__body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-404__text {
+  font-size: 24px;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #141416;
+  margin-bottom: 32px;
+}
+
   
