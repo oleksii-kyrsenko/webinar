@@ -14,7 +14,7 @@ const Router = () => {
       <Switch>
         <Route exact path="/webinar" component={Webinar} />
         <Route exact path="/xcode" component={XCode} />
-        <Route exact path="/xquitests" component={XCuitTests} />
+        <Route exact path="/xcuitests" component={XCuitTests} />
         <Route path="*" component={Page404} />
       </Switch>
     </Suspense>
