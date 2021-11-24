@@ -1,0 +1,17 @@
+@mixin adaptive-property($cssProperty, $pcSize, $mobSize, $isFreeMode) {
+  $addSize: $pcSize - $mobSize;
+  @if $isFreeMode==1 {
+    #{$cssProperty}: calc(
+      #{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{640 - 320})
+    );
+  } @else {
+    @media (max-width: 640px) {
+      #{$cssProperty}: calc(
+        #{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{640 - 320})
+      );
+    }
+    @media (min-width: 641px) {
+      #{$cssProperty}: #{$pcSize + px};
+    }
+  }
+}

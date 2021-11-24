@@ -3,8 +3,8 @@ import classes from "../../styles/Widget.module.scss";
 import Container from "../commons/Container";
 
 
-export default function Widget({children}) {
-  useScript("https://customer.smartsender.eu/js/client/lp.min.js?v2.0.0")
+export default function Widget({children, src}) {
+  useScript(src)
    
   return (
     <section className={classes.widget} id="widget">

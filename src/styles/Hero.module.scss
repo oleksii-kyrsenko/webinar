@@ -1,84 +1,46 @@
-@import "vars";
+@import "vars", "mixins";
 
 .hero {
-    &__body {
-        display: grid;
-        grid-template-columns: 1fr minmax(auto, 724px);
-        column-gap: 25px;
-        align-items: center;
+    &__title {
+        font-weight: 600;
+        line-height: 122.5%;
+        color: $accent;
+        max-width: 600px;
+        background-image: url(../assets/images/hero/title-icon.png);
+        background-repeat: no-repeat;
+        background-position: right center;
+        margin-bottom: 10px;
 
-        @media (max-width: 1024px) {
-            grid-template-columns: 1fr;
-        }
+        @include adaptive-property("background-size", 70, 33, 0);
+        @include adaptive-property("padding-right", 90, 35, 0);
+        @include adaptive-property("min-height", 85, 40, 0);
+        @include adaptive-property("font-size", 40, 20, 0);
     }
 
-    &__title {
-        display: grid;
-        grid-template-areas:
-            "a b"
-            "c c";
-        grid-template-columns: 260px 101px;
+    &__subtitle {
+        font-weight: bold;
+        line-height: 123.3%;
         color: $accent;
-        margin-bottom: $text-margin;
+        max-width: 600px;
 
-        @media (max-width: 1024px) {
-            margin-bottom: 0;
-        }
+        @include adaptive-property("font-size", 30, 14, 0);
+        @include adaptive-property("margin-bottom", 20, 10, 0);
+    }
 
-        span {
-            font-size: 40px;
-            line-height: 49px;
-        }
-
-        span:nth-child(1) {
-            grid-area: a;
-        }
-
-        span:nth-child(2) {
-            grid-area: c;
-            font-size: 30px;
-            line-height: 37px;
-        }
+    &__image {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
 
         img {
-            grid-area: b;
+            display: flex;
         }
-
-        @media (max-width: 768px) {
-
-            grid-template-columns: min-content 101px;
-
-            span {
-                font-size: 36px;
-                line-height: 44px;
-            }
-
-            span:nth-child(2) {
-                font-size: 24px;
-                line-height: 29px;
-            }
-        }
-
-        @media (max-width: 354px) {
-
-            grid-template-columns: min-content 85px;
-
-            span {
-                font-size: 32px;
-                line-height: 40px;
-            }
-
-            span:nth-child(2) {
-                font-size: 24px;
-                line-height: 29px;
-            }
-        }
-
     }
 
     &__text {
         color: $accent;
         margin-bottom: $text-margin;
+        max-width: 600px;
 
         @media (max-width: 768px) {
             font-size: 14px;
@@ -86,8 +48,9 @@
         }
     }
 
-    &__date {
+    &__registration {
         display: flex;
+        flex-direction: column;
         position: relative;
         padding-top: 15px;
 
@@ -100,8 +63,13 @@
             top: 0;
             left: 0;
             background-color: $btn-color;
-        }
 
+        }
+    }
+
+    &__date {
+        display: flex;
+        
         p {
             position: relative;
             display: flex;
@@ -148,32 +116,15 @@
         }
     }
 
-    &__title-image {
-        display: none;
+    &__description {
+        margin-top: $text-margin;
+        font-weight: 300;
+        font-style: italic;
+        color: $accent;
 
-        @media (max-width: 1024px) {
-            justify-content: center;
-            display: flex;
-        }
-    }
-
-   &__description{
-    margin-top: $text-margin;
-    font-weight: 300;
-    font-style: italic;
-    color: $accent;
-
-    @media (max-width: 768px) {
-        font-size: 14px;
-        line-height: 17px;
-    }
-   }
-
-    &__image {
-        display: flex;
-
-        @media (max-width: 1024px) {
-            display: none;
+        @media (max-width: 768px) {
+            font-size: 14px;
+            line-height: 17px;
         }
     }
 }

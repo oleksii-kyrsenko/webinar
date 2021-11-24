@@ -1112,6 +1112,13 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@babel/runtime@^7.16.0":
+  version "7.16.3"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.16.3.tgz#b86f0db02a04187a3c17caa77de69840165d42d5"
+  integrity sha512-WBwekcqacdY2e9AF/Q7WLFUWmdJGJTkbjqTjoMDgXkVZ3ZRUvOPsLb5KdwISoQVsbP+DQzVZW4Zhci0DvpbNTQ==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/template@^7.10.4", "@babel/template@^7.12.13", "@babel/template@^7.3.3":
   version "7.12.13"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.12.13.tgz#530265be8a2589dbb37523844c5bcb55947fb327"
@@ -2127,6 +2134,13 @@
     "@webassemblyjs/ast" "1.9.0"
     "@webassemblyjs/wast-parser" "1.9.0"
     "@xtuc/long" "4.2.2"
+
+"@wordpress/html-entities@^3.1.1":
+  version "3.2.3"
+  resolved "https://registry.yarnpkg.com/@wordpress/html-entities/-/html-entities-3.2.3.tgz#0f3ff30fce774e6388046e64be70c01b719968cd"
+  integrity sha512-406VUz8CuKgKGrW/wjRB877soSqGhGDwK4sSuNoIC1FvpfniZ0ijpqfsdhJOOynWdz+RYN1wAsfogBpzuREJOg==
+  dependencies:
+    "@babel/runtime" "^7.16.0"
 
 "@xtuc/ieee754@^1.2.0":
   version "1.2.0"

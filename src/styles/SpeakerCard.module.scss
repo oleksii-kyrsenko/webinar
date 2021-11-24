@@ -1,4 +1,4 @@
-@import "vars";
+@import "vars", "mixins";
 
 .speaker {
     display: flex;
@@ -92,14 +92,13 @@
 
     &__name {
         font-weight: bold;
-        font-size: 24px;
-        line-height: 28px;
+        line-height: 120%;
         color: $accent;
         margin-bottom: $text-margin;
 
+        @include adaptive-property("font-size", 24, 20, 0);
+
         @media (max-width: 768px) {
-            font-size: 20px;
-            line-height: 23px;
             margin-bottom: $text-margin/2;
         }
     }

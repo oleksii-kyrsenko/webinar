@@ -5,29 +5,25 @@ import Button from "../commons/Button";
 import { data } from "../../data/hero";
 import Paragraph from "../commons/Paragraph";
 
-
 export default function Hero() {
   return (
     <Section className={classes.hero}>
       <Container>
         <section className={classes.hero__body}>
-          <div className={classes.hero__content}>
-            <h1 className={classes.hero__title}>
-              <span>{data.title.top}</span>
-              <span>{data.title.bottom}</span>
-              <img src={data.titleIcon} alt={data.title.top} width={101} height={101} />
-            </h1>
-            <div className={classes["hero__title-image"]}>
-            <img
-              src={data.image}
-              alt="Engenious Hero slide"
-              width="724px"
-              height="406px"
-            />
-          </div>
+            <h1 className={classes.hero__title}>{data.title}</h1>
+            <h2 className={classes.hero__subtitle}>{data.subtitle}</h2>
+            <div className={classes.hero__image}>
+              <img
+                src={data.image}
+                alt="Engenious"
+                width="724px"
+                height="406px"
+              />
+            </div>
             <div className={classes.hero__text}>
               <Paragraph data={data.text} />
             </div>
+            <div className={classes.hero__registration}>
             <div className={classes.hero__date}>
               <p>
                 <span>{data.date.day.top}</span>
@@ -43,16 +39,10 @@ export default function Hero() {
               </p>
             </div>
             <Button text={data.btnText} />
-            <p className={classes.hero__description}>{data.description}</p>
-          </div>
-          <div className={classes.hero__image}>
-            <img
-              src={data.image}
-              alt="Engenious Hero slide"
-              width="724px"
-              height="406px"
-            />
-          </div>
+            </div>
+            <div className={classes.hero__description}>
+              <Paragraph data={data.description} />
+            </div>
         </section>
       </Container>
     </Section>

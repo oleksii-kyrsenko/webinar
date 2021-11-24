@@ -27,13 +27,8 @@ export default function Web2() {
       <Speakers />
       <Banner />
       <About />
-      <Widget>
-        <div
-          id="35H09lyN"
-          className="ss-landing"
-          data-target="35H09lyN"
-          data-domain="engenious"
-        ></div>
+      <Widget src="https://customer.smartsender.eu/js/client/lp.min.js?v2.0.0">
+      <div id="L3mdP13r" className="ss-landing" data-target="L3mdP13r" data-domain="engenious"></div>
       </Widget>
       <Footer />
     </section>

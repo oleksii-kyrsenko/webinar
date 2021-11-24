@@ -12,7 +12,7 @@ import Widget from "../components/Widget";
 import Speakers from "../components/Speakers";
 import About from "../components/About";
 
-export default function Web1() {
+export default function Web2() {
   useEffect(() => {
     gsap.registerPlugin(ScrollToPlugin);
     gsap.core.globals("ScrollToPlugin", ScrollToPlugin);
@@ -27,13 +27,8 @@ export default function Web1() {
       <Speakers />
       <Banner />
       <About />
-      <Widget>
-        <div
-          id="35H09lyN"
-          className="ss-landing"
-          data-target="35H09lyN"
-          data-domain="engenious"
-        ></div>
+      <Widget src="https://customer.smartsender.eu/js/client/lp.min.js?v2.0.0">
+      <div id="cjZJpSJp" className="ss-landing" data-target="cjZJpSJp" data-domain="engenious"></div>
       </Widget>
       <Footer />
     </section>

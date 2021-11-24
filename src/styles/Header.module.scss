@@ -1,4 +1,4 @@
-@import "vars";
+@import "vars", "mixins";
 
 .header {
     width: 100%;
@@ -28,15 +28,7 @@
     }
 
     &__logo{
-        display: flex;
-        flex: 0 0 255px;
-
-        @media (max-width: 640px) {
-           flex: 0 0 186px;
-        }
-
-        @media (max-width: 354px) {
-            flex: 0 0 155px;
-        }
+       img{ display: flex;}
+       @include adaptive-property("width", 255, 155, 0);
     }
 }
