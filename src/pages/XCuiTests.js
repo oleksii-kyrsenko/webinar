@@ -12,7 +12,7 @@ import Widget from "../components/Widget";
 import Speakers from "../components/Speakers";
 import About from "../components/About";
 
-export default function Web2() {
+export default function XCuiTests() {
   useEffect(() => {
     gsap.registerPlugin(ScrollToPlugin);
     gsap.core.globals("ScrollToPlugin", ScrollToPlugin);
