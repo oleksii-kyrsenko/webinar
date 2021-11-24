@@ -30,7 +30,7 @@
     &__image {
         display: flex;
         justify-content: center;
-        margin-bottom: 20px;
+        @include adaptive-property("margin-bottom", 20, 10, 0);
 
         @media (max-height: 768px) {
             max-width: 600px;
