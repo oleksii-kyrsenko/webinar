@@ -13,8 +13,8 @@ export const data = {
           bottom:"DAY",
       },
       month:{
-          top:"Dec",
-          bottom:"15",
+          top:"Feb",
+          bottom:"16",
       },
       time:{
           top:"10:00 (PST)",
